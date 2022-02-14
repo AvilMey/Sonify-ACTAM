@@ -15,7 +15,8 @@ for data sets so as to aid the visually impaired and/or add a dimension to
 interpreting data.
 
 It has evolved into an image sonification app purely. It serves the same
-purposes that the original app intended but was more fun to create.
+purposes that the original app intended but with the aim to help visual 
+impaired people to visualize in some way different type of images.
 
 This is the fruit of these labors.
 
@@ -42,9 +43,9 @@ USING THE APP
 -------------
 
 Once you open the app you will find an image input button where you can upload 
-the image you would like to sonify. You have four different synthesized sounds 
-to choose from (Acoustic, Piano, EDM, and Organ). You then have Parameters you  
-can control such as the duration of each note, the number of steps you want your 
+the image you would like to sonify. You have five different synthesized sounds 
+to choose from (Acoustic, Piano, EDM, Organ and Manual). You then have Parameters you  
+can control such as the duration of each note, the number of stime steps you want your 
 image to have and, finally, the threshold value which is going to decide if a 
 pixel is played or not. If its value is 0, all the pixels are going to be played 
 but if it is 1, no pixel will be played. Besides the scale that is being played 
@@ -52,20 +53,24 @@ can change depending on the interest of the user.
 
 You can also choose the Manual Mode option instead of a Synthesized sound and 
 create your own custom sound. You can choose one of four waveforms, (Sine, 
-Triangle, Sawtooth or Triangle) and control their base frequency. As well as a 
-variety of other controls that can be found in a synthesizer:
+Triangle, Sawtooth or Triangle) and control different parameters such as the 
+wave envelope. As well as a variety of other controls that can be found in a synthesizer:
 
-	Filter: 		you can apply a variety of filters to the image you want 
-			to sonify by selecting its frequency as well as other 
+	Filter: 	you can apply a variety of filters to the image you want 
+			to sonify by selecting its frequency location as well as other 
 			filter parameters.
 
-	Attack, release, Decay, Sustain: with this parameters you can custom 
-					the duration of your notes by varying 
-					them differently as you wish
+	Wave envelope : with this parameters you can custom the wave envelope
 
-	Distortion: 	you can turn it on or off if you want to apply it to your 
-			image, so that you can change its value as well as the 
-			harmonics or the detune
+	Distortion: 	You can turn distortion on and off and also vary it's 
+			ammount
+
+	Musical parameters: You can choose from a wide range of scales to be 
+			    used. Also you can add harmonics to the base notes
+		            so you can create different types of sounds and try
+			    to synthesize your own instrument 
+		
+
 
 Brief parameters description:
 
@@ -103,4 +108,4 @@ unisonWidth =  1; //Detune value, it can be a low number, from 1 to 20 more or l
 
 harmonics = [1,0.5,1,0.5,1]; // Weigths for the harmonics, the size of the array is the number of harmonics, and the values are the weigths.
 
-duration2 = 1; //Duration of notes when preset synth is used
+duration = 1; //Duration of notes when preset synth is used
